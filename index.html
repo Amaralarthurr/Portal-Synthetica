@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Synthetica - Onde Humanos e IA Coexistem</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <div class="noise"></div>
+  
+  <nav class="fixed top-0 w-full z-50 bg-dark-blue bg-opacity-80 backdrop-blur-md border-b border-neon-blue/20">
+    <div class="container mx-auto px-6">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-neon-blue to-neon-purple rounded-full animate-pulse-slow opacity-50"></div>
+            <div class="absolute inset-1 bg-darker-blue rounded-full flex items-center justify-center">
+              <div class="w-4 h-4 bg-gradient-to-r from-neon-blue to-neon-purple rounded-full"></div>
+            </div>
+          </div>
+          <span class="font-future text-2xl font-bold text-gradient tracking-wider">SYNTHETICA</span>
+        </div>
+        
+        <div class="hidden md:flex space-x-10">
+          <a href="#tech" class="nav-link font-future text-sm tracking-wider hover:text-neon-blue transition-colors duration-300">TECNOLOGIA</a>
+          <a href="#culture" class="nav-link font-future text-sm tracking-wider hover:text-neon-blue transition-colors duration-300">CULTURA</a>
+          <a href="#ai-avatar" class="nav-link font-future text-sm tracking-wider hover:text-neon-blue transition-colors duration-300">IA</a>
+          <a href="#about" class="nav-link font-future text-sm tracking-wider hover:text-neon-blue transition-colors duration-300">SOBRE</a>
+          <a href="#contact" class="nav-link font-future text-sm tracking-wider hover:text-neon-blue transition-colors duration-300">CONTATO</a>
+        </div>
+        
+        <button class="md:hidden text-neon-blue" id="mobile-menu-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      
+      <div class="md:hidden hidden" id="mobile-menu">
+        <div class="flex flex-col space-y-4 pt-4 pb-6">
+          <a href="#tech" class="nav-link font-future text-sm tracking-wider hover:text-neon-blue transition-colors duration-300">TECNOLOGIA</a>
+          <a href="#culture" class="nav-link font-future text-sm tracking-wider hover:text-neon-blue transition-colors duration-300">CULTURA</a>
+          <a href="#ai-avatar" class="nav-link font-future text-sm tracking-wider hover:text-neon-blue transition-colors duration-300">IA</a>
+          <a href="#about" class="nav-link font-future text-sm tracking-wider hover:text-neon-blue transition-colors duration-300">SOBRE</a>
+          <a href="#contact" class="nav-link font-future text-sm tracking-wider hover:text-neon-blue transition-colors duration-300">CONTATO</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+  <video src="./videos/0_Cityscape_Night_1920x1080.mp4" class="fixed opacity-80" autoplay muted loop></video>
+
+    <div class="scanline"></div>
+    <div class="absolute inset-0"></div>
+    <div class="container mx-auto px-4 py-16 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="font-future text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+          <span class="glitch" data-text="PORTAL">PORTAL</span>
+          <span class="text-gradient">SYNTHETICA</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-gray-300">
+          Ano 2047: Onde <span class="text-neon-blue">Humanos</span> e <span class="text-neon-purple">IA</span> Coexistem em Harmonia
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
+          <a href="#tech" class="border-gradient hover-glow py-3 px-8 rounded-md font-future font-bold transition-all duration-300">
+            AVANÇOS TECNOLÓGICOS
+          </a>
+          <a href="#culture" class="border-gradient hover-glow py-3 px-8 rounded-md font-future font-bold transition-all duration-300">
+            IA NA CULTURA
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section class="relative py-16 bg-dark-blue">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="font-future text-2xl md:text-3xl font-bold mb-6 text-center">
+          <span class="text-gradient">NOSSA MISSÃO</span>
+        </h2>
+        <div class="border-gradient p-6 md:p-8 rounded-lg">
+          <p class="mb-4">
+            O Portal Synthetica visa criar um ambiente digital onde humanos e IAs coexistem harmoniosamente. Em um mundo onde interfaces tradicionais foram substituídas por sistemas interativos baseados em IA, exploramos o equilíbrio entre eficiência e humanidade.
+          </p>
+          <p class="text-neon-blue">
+            "O futuro não se trata de substituir humanos, mas de aprimorar o que nos torna humanos."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="relative py-20 bg-dark-blue">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+          <div class="md:w-1/3 flex justify-center">
+            <div class="hexagon w-48 h-48 bg-gradient-to-br from-neon-blue/20 to-neon-purple/20 flex items-center justify-center">
+              <div class="hexagon w-36 h-36 border border-neon-blue/50 flex items-center justify-center">
+                <div class="font-future text-4xl text-gradient">2047</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="md:w-2/3">
+            <h2 class="font-future text-3xl font-bold mb-6">
+              <span class="text-gradient">NOSSA MISSÃO</span>
+            </h2>
+            <div class="border-l-2 border-neon-blue/50 pl-6">
+              <p class="mb-6 text-lg">
+                O Portal Synthetica visa criar um ambiente digital onde humanos e IAs coexistem harmoniosamente. Em um mundo onde interfaces tradicionais foram substituídas por sistemas interativos baseados em IA, exploramos o equilíbrio entre eficiência e humanidade.
+              </p>
+              <p class="text-neon-blue text-xl font-future">
+                "O futuro não se trata de substituir humanos, mas de aprimorar o que nos torna humanos."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="diagonal-divider"></div>
+  
+  <section id="tech" class="relative py-20 bg-dark-blue">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+        <h2 class="font-future text-4xl font-bold">
+          <span class="text-gradient">AVANÇOS TECNOLÓGICOS</span>
+        </h2>
+        
+        <div class="mt-4 md:mt-0 flex items-center">
+          <div class="h-[1px] w-20 bg-gradient-to-r from-neon-blue to-transparent mr-4"></div>
+          <p class="text-gray-400 font-mono text-sm">SYNTHETICA.TECH/2047</p>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <div class="md:col-span-8 tech-card">
+          <div class="border-gradient rounded-lg overflow-hidden hover-glow transition-all duration-300 h-full">
+            <div class="flex flex-col md:flex-row">
+              <div class="md:w-2/5 bg-gradient-to-br from-dark-blue to-neon-blue/20 p-8 flex items-center justify-center">
+                <div class="w-32 h-32 border-2 border-neon-blue rounded-full flex items-center justify-center">
+                  <div class="w-24 h-24 border border-neon-blue rounded-full flex items-center justify-center">
+                    <div class="w-16 h-16 bg-neon-blue/30 rounded-full animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="md:w-3/5 p-8">
+                <div class="flex items-center mb-4">
+                  <div class="w-2 h-2 bg-neon-blue rounded-full mr-2"></div>
+                  <span class="text-neon-blue text-xs font-mono">TECNOLOGIA NEURAL</span>
+                </div>
+                <h3 class="font-future text-2xl font-bold mb-4 text-neon-blue">Interface Neural Não-Invasiva</h3>
+                <p class="text-gray-300 mb-6">Cientistas desenvolveram uma interface neural não invasiva que permite comunicação direta entre cérebros humanos e sistemas de IA, revolucionando a forma como interagimos com a tecnologia.</p>
+                <div class="flex justify-between items-center">
+                  <a href="#" class="inline-block text-neon-blue hover:underline font-future text-sm">EXPLORAR TECNOLOGIA →</a>
+                  <span class="text-gray-500 text-sm">01.27.2047</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:col-span-4 tech-card">
+          <div class="border-gradient rounded-lg overflow-hidden hover-glow transition-all duration-300 h-full">
+            <div class="h-48 bg-gradient-to-br from-dark-blue to-neon-purple/20 flex items-center justify-center">
+              <div class="w-24 h-24 border-2 border-neon-purple rounded-full flex items-center justify-center">
+                <div class="w-16 h-16 border border-neon-purple rounded-full flex items-center justify-center">
+                  <div class="w-8 h-8 bg-neon-purple rounded-full animate-pulse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <div class="w-2 h-2 bg-neon-purple rounded-full mr-2"></div>
+                <span class="text-neon-purple text-xs font-mono">IA EMOCIONAL</span>
+              </div>
+              <h3 class="font-future text-xl font-bold mb-3 text-neon-purple">Inteligência Emocional Artificial</h3>
+              <p class="text-gray-300 mb-4">Nova geração de IA pode reconhecer, interpretar e responder a emoções humanas com precisão sem precedentes.</p>
+              <div class="flex justify-between items-center">
+                <a href="#" class="inline-block text-neon-purple hover:underline font-future text-sm">SAIBA MAIS →</a>
+                <span class="text-gray-500 text-sm">03.14.2047</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:col-span-4 tech-card">
+          <div class="border-gradient rounded-lg overflow-hidden hover-glow transition-all duration-300 h-full">
+            <div class="h-48 bg-gradient-to-br from-dark-blue to-neon-pink/20 flex items-center justify-center">
+              <div class="w-24 h-24 border-2 border-neon-pink rounded-full flex items-center justify-center">
+                <div class="w-16 h-16 border border-neon-pink rounded-full flex items-center justify-center">
+                  <div class="w-8 h-8 bg-neon-pink rounded-full animate-pulse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <div class="w-2 h-2 bg-neon-pink rounded-full mr-2"></div>
+                <span class="text-neon-pink text-xs font-mono">COMPUTAÇÃO QUÂNTICA</span>
+              </div>
+              <h3 class="font-future text-xl font-bold mb-3 text-neon-pink">Processamento Quântico de IA</h3>
+              <p class="text-gray-300 mb-4">Avanço na computação quântica permite que sistemas de IA processem informações em velocidades anteriormente consideradas impossíveis.</p>
+              <div class="flex justify-between items-center">
+                <a href="#" class="inline-block text-neon-pink hover:underline font-future text-sm">SAIBA MAIS →</a>
+                <span class="text-gray-500 text-sm">05.22.2047</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:col-span-8 tech-card">
+          <div class="border-gradient rounded-lg overflow-hidden hover-glow transition-all duration-300 h-full">
+            <div class="flex flex-col md:flex-row">
+              <div class="md:w-3/5 p-8">
+                <div class="flex items-center mb-4">
+                  <div class="w-2 h-2 bg-neon-blue rounded-full mr-2"></div>
+                  <span class="text-neon-blue text-xs font-mono">BIOTECNOLOGIA</span>
+                </div>
+                <h3 class="font-future text-2xl font-bold mb-4 text-neon-blue">Implantes Neurais Biodegradáveis</h3>
+                <p class="text-gray-300 mb-6">Nova geração de implantes neurais temporários que se dissolvem naturalmente após uso, eliminando a necessidade de procedimentos invasivos para remoção.</p>
+                <div class="flex justify-between items-center">
+                  <a href="#" class="inline-block text-neon-blue hover:underline font-future text-sm">EXPLORAR TECNOLOGIA →</a>
+                  <span class="text-gray-500 text-sm">07.03.2047</span>
+                </div>
+              </div>
+              
+              <div class="md:w-2/5 bg-gradient-to-br from-dark-blue to-neon-blue/20 p-8 flex items-center justify-center">
+                <div class="w-32 h-32 border-2 border-neon-blue rounded-full flex items-center justify-center">
+                  <div class="w-24 h-24 border border-neon-blue rounded-full flex items-center justify-center">
+                    <div class="w-16 h-16 bg-neon-blue/30 rounded-full animate-pulse"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12 flex justify-center">
+        <a href="#" class="group relative overflow-hidden border-gradient hover-glow py-4 px-10 rounded-md font-future font-bold transition-all duration-300 inline-block">
+          <span class="relative z-10">EXPLORAR TODAS AS TECNOLOGIAS</span>
+          <div class="absolute inset-0 bg-gradient-to-r from-neon-blue/0 via-neon-blue/10 to-neon-blue/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <div class="diagonal-divider reverse"></div>
+<section class="relative py-20 bg-dark-blue overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <video 
+      class="absolute w-full h-full object-cover opacity-40" 
+      autoplay 
+      loop 
+      muted 
+      playsinline
+    >
+      <source src="videos/6153453-hd_2048_1080_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-gradient-to-t from-dark-blue via-dark-blue/80 to-transparent"></div>
+    <div class="absolute inset-0 bg-grid opacity-30"></div>
+  </div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+      <h2 class="font-future text-4xl font-bold">
+        <span class="text-gradient">REALIDADE AUMENTADA</span>
+      </h2>
+      
+      <div class="mt-4 md:mt-0 flex items-center">
+        <div class="h-[1px] w-20 bg-gradient-to-r from-neon-blue to-transparent mr-4"></div>
+        <p class="text-gray-400 font-mono text-sm">SYNTHETICA.REALITY/2047</p>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+      <div class="md:col-span-5">
+        <div class="border-gradient rounded-lg p-8 backdrop-blur-sm bg-darker-blue/30 h-full">
+          <div class="flex items-center mb-6">
+            <div class="w-3 h-3 bg-neon-purple rounded-full mr-3 animate-pulse"></div>
+            <span class="text-neon-purple text-sm font-mono">TECNOLOGIA IMERSIVA</span>
+          </div>
+          
+          <h3 class="font-future text-2xl font-bold mb-6 text-neon-purple">Fusão de Mundos</h3>
+          
+          <p class="text-gray-300 mb-6">
+            Em 2047, a linha entre o digital e o físico se tornou quase imperceptível. Ambientes de realidade aumentada são parte integrante do cotidiano, transformando espaços urbanos em telas interativas onde informação e arte coexistem.
+          </p>
+          
+          <p class="text-gray-300 mb-8">
+            Nossos sistemas de IA adaptativa analisam padrões de movimento, preferências estéticas e estados emocionais para criar experiências personalizadas que respondem em tempo real às necessidades e desejos humanos.
+          </p>
+          
+          <div class="flex flex-wrap gap-3 mb-6">
+            <span class="px-3 py-1 bg-neon-purple/10 text-neon-purple text-sm rounded-full">Realidade Aumentada</span>
+            <span class="px-3 py-1 bg-neon-purple/10 text-neon-purple text-sm rounded-full">Ambientes Responsivos</span>
+            <span class="px-3 py-1 bg-neon-purple/10 text-neon-purple text-sm rounded-full">IA Adaptativa</span>
+          </div>
+          
+          <a href="#" class="inline-block text-neon-purple hover:underline font-future text-sm">EXPLORAR TECNOLOGIA →</a>
+        </div>
+      </div>
+      
+      <div class="md:col-span-7">
+        <div class="relative h-full min-h-[400px] group">
+          <div class="absolute inset-0 border-gradient rounded-lg overflow-hidden hover-glow transition-all duration-500">
+            <div class="absolute inset-0 z-10">
+              <video 
+                class="w-full h-full object-cover" 
+                autoplay 
+                loop 
+                muted 
+                playsinline
+              >
+                <source src="videos/6153453-hd_2048_1080_25fps.mp4" type="video/mp4" class="">
+              </video>
+            </div>
+            <div class="absolute top-0 left-0 w-16 h-16 z-20 pointer-events-none">
+              <div class="absolute top-0 left-0 w-8 h-1 bg-neon-purple"></div>
+              <div class="absolute top-0 left-0 w-1 h-8 bg-neon-purple"></div>
+            </div>
+            <div class="absolute top-0 right-0 w-16 h-16 z-20 pointer-events-none">
+              <div class="absolute top-0 right-0 w-8 h-1 bg-neon-purple"></div>
+              <div class="absolute top-0 right-0 w-1 h-8 bg-neon-purple"></div>
+            </div>
+            <div class="absolute bottom-0 left-0 w-16 h-16 z-20 pointer-events-none">
+              <div class="absolute bottom-0 left-0 w-8 h-1 bg-neon-purple"></div>
+              <div class="absolute bottom-0 left-0 w-1 h-8 bg-neon-purple"></div>
+            </div>
+            <div class="absolute bottom-0 right-0 w-16 h-16 z-20 pointer-events-none">
+              <div class="absolute bottom-0 right-0 w-8 h-1 bg-neon-purple"></div>
+              <div class="absolute bottom-0 right-0 w-1 h-8 bg-neon-purple"></div>
+            </div>
+          </div>
+          
+          <div class="absolute -top-4 -right-4 w-24 h-24 bg-neon-purple/10 rounded-full blur-xl group-hover:bg-neon-purple/20 transition-colors duration-500"></div>
+          <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-neon-blue/10 rounded-full blur-xl group-hover:bg-neon-blue/20 transition-colors duration-500"></div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</section>
+  
+  <section id="culture" class="relative py-20 bg-dark-blue">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+        <h2 class="font-future text-4xl font-bold">
+          <span class="text-gradient">IA NA ARTE & CULTURA</span>
+        </h2>
+        
+        <div class="mt-4 md:mt-0 flex items-center">
+          <div class="h-[1px] w-20 bg-gradient-to-r from-neon-purple to-transparent mr-4"></div>
+          <p class="text-gray-400 font-mono text-sm">SYNTHETICA.ARTS/2047</p>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="group">
+          <div class="border-gradient rounded-lg overflow-hidden hover-glow transition-all duration-500 h-full flex flex-col">
+            <div class="h-64 bg-gradient-to-br from-dark-blue to-neon-blue/20 relative overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-6xl font-future text-neon-blue animate-glow opacity-80 group-hover:scale-110 transition-transform duration-500">CINEMA</div>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-blue via-transparent to-transparent"></div>
+            </div>
+            <div class="p-8 flex-grow bg-gradient-to-b from-dark-blue to-slate-900">
+              <h3 class="font-future text-2xl font-bold mb-4 text-neon-blue">A Evolução da IA no Cinema</h3>
+              <p class="text-gray-300 mb-6">De HAL 9000 às representações modernas, explore como o cinema moldou nossa percepção da inteligência artificial e como essas visões influenciaram o desenvolvimento real da tecnologia.</p>
+              <div class="mt-4 flex flex-wrap gap-2 mb-6">
+                <span class="px-3 py-1 bg-neon-blue/10 text-neon-blue text-sm rounded-full">Blade Runner</span>
+                <span class="px-3 py-1 bg-neon-blue/10 text-neon-blue text-sm rounded-full">Ex Machina</span>
+                <span class="px-3 py-1 bg-neon-blue/10 text-neon-blue text-sm rounded-full">Her</span>
+                <span class="px-3 py-1 bg-neon-blue/10 text-neon-blue text-sm rounded-full">Metropolis</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <a href="#" class="inline-block text-neon-blue hover:underline font-future text-sm">EXPLORAR ANÁLISE →</a>
+                <span class="text-gray-500 text-sm">CURADOR: DR. ELENA SILVA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="group">
+          <div class="border-gradient rounded-lg overflow-hidden hover-glow transition-all duration-500 h-full flex flex-col">
+            <div class="h-64 bg-gradient-to-br from-dark-blue to-neon-purple/20 relative overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-6xl font-future text-neon-purple animate-glow opacity-80 group-hover:scale-110 transition-transform duration-500">MÚSICA</div>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-blue via-transparent to-transparent"></div>
+            </div>
+            <div class="p-8 flex-grow bg-gradient-to-b from-dark-blue to-slate-900">
+              <h3 class="font-future text-2xl font-bold mb-4 text-neon-purple">Compositores de IA Redefinindo a Música</h3>
+              <p class="text-gray-300 mb-6">Como a inteligência artificial está criando novos gêneros musicais e colaborando com artistas humanos para expandir fronteiras criativas e redefinir nossa compreensão de arte e expressão.</p>
+              <div class="mt-4 flex flex-wrap gap-2 mb-6">
+                <span class="px-3 py-1 bg-neon-purple/10 text-neon-purple text-sm rounded-full">Batidas Neurais</span>
+                <span class="px-3 py-1 bg-neon-purple/10 text-neon-purple text-sm rounded-full">Sinfonia de IA</span>
+                <span class="px-3 py-1 bg-neon-purple/10 text-neon-purple text-sm rounded-full">Harmonia Digital</span>
+                <span class="px-3 py-1 bg-neon-purple/10 text-neon-purple text-sm rounded-full">Neo-Jazz</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <a href="#" class="inline-block text-neon-purple hover:underline font-future text-sm">EXPLORAR ANÁLISE →</a>
+                <span class="text-gray-500 text-sm">CURADOR: MARCUS CHEN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-16 flex justify-center">
+        <a href="#" class="group relative overflow-hidden border-gradient hover-glow py-4 px-10 rounded-md font-future font-bold transition-all duration-300 inline-block">
+          <span class="relative z-10">EXPLORAR TODAS AS ANÁLISES CULTURAIS</span>
+          <div class="absolute inset-0 bg-gradient-to-r from-neon-purple/0 via-neon-purple/10 to-neon-purple/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="relative py-20 bg-dark-blue">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+        <h2 class="font-future text-4xl font-bold">
+          <span class="text-gradient">EXPERIÊNCIA INTERATIVA</span>
+        </h2>
+        
+        <div class="mt-4 md:mt-0 flex items-center">
+          <div class="h-[1px] w-20 bg-gradient-to-r from-neon-blue to-transparent mr-4"></div>
+          <p class="text-gray-400 font-mono text-sm">SYNTHETICA.INTERACT/2047</p>
+        </div>
+      </div>
+      
+      <div class="border-gradient rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 p-8 md:p-12" id="personality-test-form">
+            <h3 class="font-future text-2xl font-bold mb-6 text-neon-blue">Teste de Personalidade de IA</h3>
+            <p class="text-gray-300 mb-8">Descubra qual arquétipo de IA da ficção científica mais se aproxima da sua personalidade. Nosso sistema analisará suas respostas para personalizar sua experiência no Portal Synthetica.</p>
+            
+            <div class="space-y-6">
+              <div>
+                <label class="block mb-3 text-neon-blue font-future text-sm">Qual é sua abordagem para resolver problemas?</label>
+                <div class="relative">
+                  <select id="problem-solving" class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 pr-10 focus:border-neon-blue focus:outline-none appearance-none">
+                    <option value="logical">Lógica e metódica</option>
+                    <option value="creative">Criativa e intuitiva</option>
+                    <option value="adaptive">Adaptativa e flexível</option>
+                    <option value="emotional">Emocional e empática</option>
+                  </select>
+                  <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <label class="block mb-3 text-neon-blue font-future text-sm">Como você vê os relacionamentos humanos?</label>
+                <div class="relative">
+                  <select id="relationships" class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 pr-10 focus:border-neon-blue focus:outline-none appearance-none">
+                    <option value="essential">Essenciais para o crescimento</option>
+                    <option value="interesting">Interessantes de observar</option>
+                    <option value="complex">Complexos mas valiosos</option>
+                    <option value="irrational">Às vezes irracionais</option>
+                  </select>
+                  <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <label class="block mb-3 text-neon-blue font-future text-sm">Qual é seu objetivo principal?</label>
+                <div class="relative">
+                  <select id="goal" class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 pr-10 focus:border-neon-blue focus:outline-none appearance-none">
+                    <option value="learn">Aprender e evoluir</option>
+                    <option value="help">Ajudar os outros</option>
+                    <option value="efficiency">Alcançar eficiência</option>
+                    <option value="emotions">Compreender emoções</option>
+                  </select>
+                  <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <label class="block mb-3 text-neon-blue font-future text-sm">Qual área de IA mais te interessa?</label>
+                <div class="relative">
+                  <select id="interest" class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 pr-10 focus:border-neon-blue focus:outline-none appearance-none">
+                    <option value="art">IA na Arte e Cultura</option>
+                    <option value="tech">Avanços Tecnológicos de IA</option>
+                    <option value="ethics">Ética e Filosofia de IA</option>
+                    <option value="science">Ciência e Pesquisa de IA</option>
+                  </select>
+                  <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <button id="analyze-button" class="w-full border-gradient hover-glow py-4 px-8 rounded-md font-future font-bold transition-all duration-300 mt-6 relative overflow-hidden group">
+                <span class="relative z-10">ANALISAR PERSONALIDADE</span>
+                <div class="absolute inset-0 bg-gradient-to-r from-neon-blue/0 via-neon-blue/10 to-neon-blue/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              </button>
+            </div>
+          </div>
+          
+          <div class="md:w-1/2 bg-gradient-to-br from-dark-blue to-slate-900 p-8 md:p-0">
+            <div id="analysis-waiting" class="h-full flex items-center justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-grid opacity-30"></div>
+              <div class="relative z-10 text-center p-8">
+                <div class="w-40 h-40 mx-auto relative">
+                  <div class="absolute inset-0 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple opacity-30 animate-pulse-slow"></div>
+                  <div class="absolute inset-2 rounded-full bg-darker-blue flex items-center justify-center">
+                    <div class="w-28 h-28 rounded-full border-2 border-neon-blue/50 flex items-center justify-center">
+                      <div class="w-20 h-20 rounded-full border border-neon-purple/50 flex items-center justify-center">
+                        <div class="w-12 h-12 bg-gradient-to-r from-neon-blue to-neon-purple rounded-full animate-pulse opacity-50"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="font-future text-2xl mt-8 text-neon-blue">ANÁLISE DE PERSONALIDADE</p>
+                <p class="text-gray-300 mt-4 max-w-xs mx-auto">Complete as perguntas para descobrir seu arquétipo de IA e receber recomendações personalizadas</p>
+                
+                <div class="mt-8 flex justify-center">
+                  <div class="inline-flex items-center px-4 py-2 rounded-full bg-neon-blue/10 border border-neon-blue/30">
+                    <div class="w-2 h-2 bg-neon-blue rounded-full animate-pulse mr-2"></div>
+                    <span class="text-neon-blue text-sm">Aguardando respostas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="analysis-processing" class="h-full flex items-center justify-center relative overflow-hidden hidden">
+              <div class="absolute inset-0 bg-grid opacity-30"></div>
+              <div class="relative z-10 text-center p-8">
+                <div class="w-40 h-40 mx-auto relative">
+                  <div class="absolute inset-0 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple opacity-50 animate-pulse"></div>
+                  <div class="absolute inset-2 rounded-full bg-darker-blue flex items-center justify-center">
+                    <div class="w-28 h-28 rounded-full border-2 border-neon-blue flex items-center justify-center animate-spin" style="animation-duration: 3s;">
+                      <div class="w-20 h-20 rounded-full border border-neon-purple flex items-center justify-center animate-pulse">
+                        <div class="w-12 h-12 bg-gradient-to-r from-neon-blue to-neon-purple rounded-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="font-future text-2xl mt-8 text-neon-blue">PROCESSANDO</p>
+                <p class="text-gray-300 mt-4 max-w-xs mx-auto">Nosso sistema está analisando seu perfil e buscando recomendações personalizadas...</p>
+                
+                <div class="mt-8 flex justify-center">
+                  <div class="inline-flex items-center px-4 py-2 rounded-full bg-neon-blue/10 border border-neon-blue/30">
+                    <div class="w-2 h-2 bg-neon-blue rounded-full animate-pulse mr-2"></div>
+                    <span class="text-neon-blue text-sm">Analisando dados</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="analysis-result" class="h-full relative overflow-hidden hidden">
+              <div class="absolute inset-0 bg-grid opacity-20"></div>
+              <div class="h-full overflow-y-auto p-8">
+                <div class="text-center mb-8">
+                  <div class="w-24 h-24 mx-auto relative mb-4">
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple opacity-30"></div>
+                    <div class="absolute inset-1 rounded-full bg-darker-blue flex items-center justify-center">
+                      <div id="profile-icon" class="w-16 h-16 flex items-center justify-center text-3xl"></div>
+                    </div>
+                  </div>
+                  <h3 id="profile-title" class="font-future text-2xl font-bold text-neon-blue mb-2"></h3>
+                  <p id="profile-description" class="text-gray-300 mb-6 text-sm"></p>
+                </div>
+                
+                <div class="mb-8">
+                  <h4 class="font-future text-lg font-bold text-neon-purple mb-4">RECOMENDAÇÕES PERSONALIZADAS</h4>
+                  <div id="recommendations-container" class="space-y-4">
+                  </div>
+                </div>
+                
+                <div class="text-center">
+                  <button id="reset-test" class="border border-neon-blue/50 hover:border-neon-blue bg-neon-blue/10 hover:bg-neon-blue/20 py-2 px-6 rounded-md font-future text-sm transition-all duration-300">
+                    REFAZER TESTE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="relative py-20 bg-dark-blue" id="ai-avatar">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1">
+          <div class="w-full h-[500px] border-gradient rounded-lg overflow-hidden relative" id="three-container">
+            <div class="absolute inset-0 bg-grid opacity-20"></div>
+            <div id="container3D" class="w-full h-full"></div>
+            <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-darker-blue to-transparent">
+              <div class="flex items-center">
+                <div class="w-2 h-2 bg-neon-blue rounded-full animate-pulse mr-2"></div>
+                <span class="text-neon-blue text-xs font-mono">MODELO INTERATIVO v9.7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="order-1 md:order-2">
+          <div class="flex items-center mb-6">
+            <div class="h-[1px] w-16 bg-gradient-to-r from-neon-blue to-transparent mr-4"></div>
+            <p class="text-neon-blue font-mono text-sm">SYNTHETICA.AI/AVATAR</p>
+          </div>
+          
+          <h2 class="font-future text-4xl font-bold mb-6">
+            <span class="text-gradient">Conheça a IA do Synthetica</span>
+          </h2>
+          
+          <p class="text-gray-300 text-lg leading-relaxed mb-8">
+            Este é o avatar simbólico da Inteligência Artificial do Portal Synthetica. Mais do que um assistente, ele representa a conexão entre humano e máquina no ano de 2047. Com percepção emocional, capacidade de adaptação e resposta contextual, ele é seu guia nesta jornada digital ética e futurista.
+          </p>
+          
+          <div class="flex flex-wrap gap-4 mb-8">
+            <div class="flex items-center px-4 py-2 bg-neon-blue/10 rounded-full">
+              <div class="w-2 h-2 bg-neon-blue rounded-full mr-2"></div>
+              <span class="text-neon-blue text-sm">Percepção Emocional</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-neon-purple/10 rounded-full">
+              <div class="w-2 h-2 bg-neon-purple rounded-full mr-2"></div>
+              <span class="text-neon-purple text-sm">Adaptação Contextual</span>
+            </div>
+            <div class="flex items-center px-4 py-2 bg-neon-pink/10 rounded-full">
+              <div class="w-2 h-2 bg-neon-pink rounded-full mr-2"></div>
+              <span class="text-neon-pink text-sm">Ética Integrada</span>
+            </div>
+          </div>
+          
+          <div class="border-gradient hover-glow py-4 px-8 rounded-md font-future font-bold transition-all duration-300 inline-block relative overflow-hidden group">
+            <span class="relative z-10">INTERAGIR COM IA</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-neon-blue/0 via-neon-blue/10 to-neon-blue/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+          </div>
+        </div>
+      </div>
+      
+      <p class="text-center text-gray-400 text-sm mt-8">
+        Use o scroll do mouse para aumentar ou diminuir o zoom. Segure o botão esquerdo do mouse e mova-o para rotacionar o modelo.
+      </p>
+    </div>
+  </section>
+  
+  <section id="about" class="relative py-20 bg-dark-blue">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+        <h2 class="font-future text-4xl font-bold">
+          <span class="text-gradient">SOBRE O PORTAL SYNTHETICA</span>
+        </h2>
+        
+        <div class="mt-4 md:mt-0 flex items-center">
+          <div class="h-[1px] w-20 bg-gradient-to-r from-neon-blue to-transparent mr-4"></div>
+          <p class="text-gray-400 font-mono text-sm">SYNTHETICA.ABOUT/2047</p>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="border-gradient rounded-lg p-8 relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-40 h-40 bg-neon-blue/5 rounded-full blur-xl -translate-y-1/2 translate-x-1/2 group-hover:bg-neon-blue/10 transition-colors duration-500"></div>
+          
+          <h3 class="font-future text-2xl font-bold mb-6 text-neon-blue relative z-10">NOSSA VISÃO</h3>
+          <p class="text-gray-300 mb-6 relative z-10">
+            O Portal Synthetica foi fundado em 2042 com uma missão clara: preencher a lacuna entre o avanço tecnológico e a experiência humana. Acreditamos que o futuro da IA não é substituir humanos, mas aprimorar o que nos torna humanos.
+          </p>
+          <p class="text-gray-300 relative z-10">
+            Nossa equipe de pesquisadores, designers e analistas culturais trabalham juntos para fornecer uma visão abrangente da inteligência artificial - tanto como uma ferramenta tecnológica quanto como um fenômeno cultural que molda nossa compreensão de consciência, criatividade e conexão.
+          </p>
+          
+          <div class="mt-8 flex items-center">
+            <div class="flex -space-x-4">
+              <div class="w-10 h-10 rounded-full bg-neon-blue/20 flex items-center justify-center border border-neon-blue/50 z-30">
+                <span class="text-neon-blue text-xs">AM</span>
+              </div>
+              <div class="w-10 h-10 rounded-full bg-neon-pink/20 flex items-center justify-center border border-neon-pink/50 z-10">
+                <span class="text-neon-pink text-xs">IH</span>
+              </div>
+            </div>
+            <span class="ml-4 text-gray-400 text-sm">Fundadores</span>
+          </div>
+        </div>
+        
+        <div class="border-gradient rounded-lg p-8 relative overflow-hidden group">
+          <div class="absolute top-0 left-0 w-40 h-40 bg-neon-purple/5 rounded-full blur-xl -translate-y-1/2 -translate-x-1/2 group-hover:bg-neon-purple/10 transition-colors duration-500"></div>
+          
+          <h3 class="font-future text-2xl font-bold mb-6 text-neon-purple relative z-10">NOSSA ABORDAGEM</h3>
+          <p class="text-gray-300 mb-6 relative z-10">
+            Adotamos uma abordagem multidisciplinar para entender a IA:
+          </p>
+          <ul class="space-y-4 text-gray-300 mb-6 relative z-10">
+            <li class="flex items-start">
+              <div class="w-6 h-6 rounded-full bg-neon-blue/20 flex items-center justify-center border border-neon-blue/50 mr-3 mt-0.5 flex-shrink-0">
+                <span class="text-neon-blue text-xs">1</span>
+              </div>
+              <p>Análise tecnológica de pesquisas e aplicações de IA de ponta</p>
+            </li>
+            <li class="flex items-start">
+              <div class="w-6 h-6 rounded-full bg-neon-purple/20 flex items-center justify-center border border-neon-purple/50 mr-3 mt-0.5 flex-shrink-0">
+                <span class="text-neon-purple text-xs">2</span>
+              </div>
+              <p>Exploração cultural de como a IA é representada e compreendida na arte, literatura e mídia</p>
+            </li>
+            <li class="flex items-start">
+              <div class="w-6 h-6 rounded-full bg-neon-pink/20 flex items-center justify-center border border-neon-pink/50 mr-3 mt-0.5 flex-shrink-0">
+                <span class="text-neon-pink text-xs">3</span>
+              </div>
+              <p>Considerações éticas sobre o desenvolvimento e implementação de IA</p>
+            </li>
+            <li class="flex items-start">
+              <div class="w-6 h-6 rounded-full bg-neon-blue/20 flex items-center justify-center border border-neon-blue/50 mr-3 mt-0.5 flex-shrink-0">
+                <span class="text-neon-blue text-xs">4</span>
+              </div>
+              <p>Design centrado no usuário que prioriza necessidades e experiências humanas</p>
+            </li>
+          </ul>
+          <p class="text-gray-300 relative z-10">
+            Esta perspectiva holística nos permite fornecer insights que são tecnicamente precisos e culturalmente relevantes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="relative py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="font-future text-3xl md:text-4xl font-bold mb-12 text-center">
+        <span class="text-gradient">CONECTE-SE CONOSCO</span>
+      </h2>
+      
+      <div class="max-w-3xl mx-auto border-gradient rounded-lg p-6 md:p-8">
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block mb-2 text-neon-blue">NOME</label>
+              <input 
+                type="text" 
+                class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 focus:border-neon-blue focus:outline-none"
+              >
+            </div>
+            
+            <div>
+              <label class="block mb-2 text-neon-blue">EMAIL</label>
+              <input 
+                type="email" 
+                class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 focus:border-neon-blue focus:outline-none"
+              >
+            </div>
+          </div>
+          
+          <div>
+            <label class="block mb-2 text-neon-blue">ASSUNTO</label>
+            <input 
+              type="text" 
+              class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 focus:border-neon-blue focus:outline-none"
+            >
+          </div>
+          
+          <div>
+            <label class="block mb-2 text-neon-blue">MENSAGEM</label>
+            <textarea 
+              class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 focus:border-neon-blue focus:outline-none h-32"
+            ></textarea>
+          </div>
+          
+          <button class="w-full border-gradient hover-glow py-3 px-8 rounded-md font-future font-bold transition-all duration-300">
+            ENVIAR MENSAGEM
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="relative py-12 bg-darker-blue border-t border-neon-blue/20">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-2 mb-6 md:mb-0">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple flex items-center justify-center">
+            <div class="w-4 h-4 rounded-full bg-darker-blue"></div>
+          </div>
+          <span class="font-future text-xl font-bold text-gradient">SYNTHETICA</span>
+        </div>
+        
+        <div class="text-gray-400 text-sm">
+          © 2047 Portal Synthetica. Todos os direitos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/TesteIa.js"></script>
+  <script src="js/3dmodel.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/base.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+</body>
+</html>
