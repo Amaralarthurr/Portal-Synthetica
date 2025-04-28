@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Synthetica - Administração de Conteúdo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scanline"></div>
+  
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-dark-blue bg-opacity-80 backdrop-blur-md border-b border-neon-blue/20">
+    <div class="container mx-auto px-6">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-neon-blue to-neon-purple rounded-full animate-pulse-slow opacity-50"></div>
+          </div>
+          <span class="font-future text-2xl font-bold text-gradient tracking-wider">SYNTHETICA ADMIN</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Main Content -->
+  <main class="container mx-auto px-6 pt-24 pb-16">
+    <div class="max-w-5xl mx-auto">
+      <h1 class="font-future text-4xl font-bold mb-8 text-center">
+        <span class="text-gradient">GERENCIAMENTO DE CONTEÚDO</span>
+      </h1>
+      
+      <!-- Form Section -->
+      <section class="mb-12">
+        <div class="border-gradient rounded-lg p-6">
+          <h2 class="font-future text-2xl font-bold mb-6 text-neon-blue">
+            <span id="form-title">ADICIONAR NOVO CONTEÚDO</span>
+          </h2>
+          
+          <form id="conteudo-form" class="space-y-6">
+            <input type="hidden" id="conteudo-id">
+            
+            <div>
+              <label for="titulo" class="block mb-2 text-neon-blue">TÍTULO</label>
+              <input 
+                type="text" 
+                id="titulo" 
+                class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 focus:border-neon-blue focus:outline-none text-white"
+                required
+              >
+            </div>
+            
+            <div>
+              <label for="descricao" class="block mb-2 text-neon-blue">DESCRIÇÃO</label>
+              <textarea 
+                id="descricao" 
+                class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 focus:border-neon-blue focus:outline-none text-white h-32"
+                required
+              ></textarea>
+            </div>
+            
+            <div>
+              <label for="categoria" class="block mb-2 text-neon-blue">CATEGORIA</label>
+              <div class="relative">
+                <select 
+                  id="categoria" 
+                  class="w-full bg-darker-blue border border-neon-blue/50 rounded-md p-3 pr-10 focus:border-neon-blue focus:outline-none appearance-none text-white"
+                  required
+                >
+                  <option value="Avanços Tecnológicos">Avanços Tecnológicos</option>
+                  <option value="IA na Arte e Cultura">IA na Arte e Cultura</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                  <svg class="w-5 h-5 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex space-x-4">
+              <button 
+                type="submit" 
+                class="flex-1 border-gradient hover-glow py-3 px-6 rounded-md font-future font-bold transition-all duration-300"
+              >
+                ACRESCENTE SEUS CONTEÚDOS NO PORTAL
+              </button>
+              
+              <button 
+                type="button" 
+                id="cancelar-btn" 
+                class="hidden flex-1 border border-neon-purple/50 bg-neon-purple/10 hover:bg-neon-purple/20 py-3 px-6 rounded-md font-future font-bold transition-all duration-300 text-neon-purple"
+              >
+                CANCELAR
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+      <!-- Content List Section -->
+      <section>
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="font-future text-2xl font-bold text-neon-purple">CONTEÚDOS CADASTRADOS</h2>
+          
+          <div class="flex items-center space-x-4">
+            <div class="relative">
+              <select 
+                id="filtro-categoria" 
+                class="bg-darker-blue border border-neon-purple/50 rounded-md p-2 pr-10 focus:border-neon-purple focus:outline-none appearance-none text-white text-sm"
+              >
+                <option value="todos">Todas as Categorias</option>
+                <option value="Avanços Tecnológicos">Avanços Tecnológicos</option>
+                <option value="IA na Arte e Cultura">IA na Arte e Cultura</option>
+              </select>
+              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                <svg class="w-4 h-4 text-neon-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="conteudos-container" class="space-y-4">
+          <!-- Os conteúdos serão renderizados aqui via JavaScript -->
+          <div class="text-center py-8 text-gray-400">
+            <div class="w-12 h-12 border-2 border-neon-blue rounded-full border-t-transparent animate-spin mx-auto mb-4"></div>
+            Carregando conteúdos...
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <!-- Notification -->
+  <div id="notification" class="fixed bottom-4 right-4 p-4 rounded-md bg-neon-blue/20 border border-neon-blue/50 text-white transform translate-y-20 opacity-0 transition-all duration-300 z-50">
+    <div class="flex items-center">
+      <div class="w-2 h-2 bg-neon-blue rounded-full animate-pulse mr-2"></div>
+      <span id="notification-message">Operação realizada com sucesso!</span>
+    </div>
+  </div>
+  
+  <script src="admin.js"></script>
+</body>
+</html>
